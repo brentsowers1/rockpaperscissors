@@ -1,18 +1,18 @@
 <div class="wrapper">
   <div class="resultBox">
     You chose: <span class="result"><%= @user_choice %></span><br />
-    <%= image_tag(choice_to_image_path(@user_choice)) %>
+    <%= image_tag(choice_to_image_path(@user_choice), alt: @user_choice.to_s, width: 240, height: 240) %>
   </div>
 
   <div class="resultBox">
     Computer chose: <span class="result"><%= @computer_choice %></span><br />
-    <%= image_tag(choice_to_image_path(@computer_choice)) %>
+    <%= image_tag(choice_to_image_path(@computer_choice), alt: @computer_choice.to_s, width: 240, height: 240) %>
   </div>
 </div>
 
 <div class="wrapper">
   Result: <span class="result"><%= result_to_sentence(@result) %></span><br />
-  <%= image_tag(result_image_path(@result)) %>
+  <%= image_tag(result_image_path(@result), alt: @result.to_s) %>
 </div>
 
 <div class="center">

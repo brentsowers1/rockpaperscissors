@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="resultBox">
+    You chose: <span class="result"><%= @user_choice %></span><br />
+    <%= image_tag(choice_to_image_path(@user_choice)) %>
+  </div>
+
+  <div class="resultBox">
+    Computer chose: <span class="result"><%= @computer_choice %></span><br />
+    <%= image_tag(choice_to_image_path(@computer_choice)) %>
+  </div>
+</div>
+
+<div class="wrapper">
+  Result: <span class="result"><%= result_to_sentence(@result) %></span><br />
+  <%= image_tag(result_image_path(@result)) %>
+</div>
+
+<div class="center">
+  <a class="result" href="/">Play again</a>
+</div>

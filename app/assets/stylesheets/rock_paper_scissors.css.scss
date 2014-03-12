@@ -1,0 +1,28 @@
+// Place all the styles related to the RockPaperScissors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.center {
+  text-align:center;
+}
+
+.result {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+br.clear {
+  clear:both;
+}
+
+.wrapper {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.resultBox {
+  width: 280px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: inline-block;
+}

@@ -1,0 +1,9 @@
+<div class="center">
+  <h1>Rock Paper Scissors!</h1>
+  <%= image_tag("rules.png", width: 350, height: 350, alt: "Scissors beats paper, paper beats rock, rock beast scissors") %>
+  <%= form_tag("/throw") do %>
+    <%= label_tag(:sign, "Make your choice:") %>
+    <%= select_tag(:sign, options_for_select(@choices))  %>
+    <%= submit_tag("Play") %>
+  <% end %>
+</div>
